@@ -6,6 +6,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import imgSection1 from "../../public/img/shop01.png";
 import imgSection2 from "../../public/img/shop02.png";
 import imgSection3 from "../../public/img/shop03.png";
+
 const Sections = () => {
   return (
     <div className="section">

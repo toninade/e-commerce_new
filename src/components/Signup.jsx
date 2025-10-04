@@ -1,4 +1,13 @@
 import { Button, Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faSquareFacebook,
+  faSquareXTwitter,
+  faSquarePinterest,
+  faSquareInstagram,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 import "./signup.css";
 
 const Signup = () => {
@@ -12,16 +21,17 @@ const Signup = () => {
           <input placeholder="Enter Your Email" type="text" />
           <Button>
             {" "}
-            <i className="fa-solid fa-envelope"></i> Subscribe
+            <FontAwesomeIcon icon={faEnvelope} />
+            Subscribe
           </Button>
         </form>
         <div className="icons">
-          <i className="fa-brands fa-square-facebook"></i>
-          <i className="fa-brands fa-square-x-twitter"></i>
-          <i className="fa-brands fa-square-instagram"></i>
-          <i className="fa-brands fa-square-pinterest"></i>
+          <FontAwesomeIcon icon={faSquareFacebook} />
+          <FontAwesomeIcon icon={faSquareXTwitter} />
+          <FontAwesomeIcon icon={faSquareInstagram} />
+          <FontAwesomeIcon icon={faSquarePinterest} />
         </div>
-        <i className="Emailimg fa-regular fa-envelope"></i>
+        <FontAwesomeIcon icon={faEnvelope} />
       </Container>
     </div>
   );
