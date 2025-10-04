@@ -7,13 +7,14 @@ import "./shop.css";
 import Btn from "./Btn";
 
 const Shop = () => {
-  const [dataToshow, setDataToshow] = useState(shopdata);
+  const dataShop = JSON.parse(shopdata);
+  const [dataToshow, setDataToshow] = useState(dataShop);
   const [inpData, setInptData] = useState("");
   const [price, setPrice] = useState({ min: 0, max: 0 });
 
   useEffect(() => {
     setDataToshow(
-      shopdata.filter((item) => {
+      dataShop.filter((item) => {
         const eleTitle = item.title.toLocaleLowerCase();
         return eleTitle.startsWith(inpData.toLocaleLowerCase());
       })
