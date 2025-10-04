@@ -41,10 +41,15 @@
 .signup .icons {
   margin-top: 30px;
 }
+
 .signup .icons svg {
   margin-right: 10px;
   font-size: 30px;
   cursor: pointer;
+  width: 30px;
+}
+.signup .icons svg:first-child {
+  width: 40px;
 }
 .Emailimg {
   position: absolute;
