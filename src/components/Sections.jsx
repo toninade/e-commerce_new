@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./section.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import img1 from "../../public/img/shop01.png ";
-import img2 from "../../public/img/shop02.png ";
-import img3 from "../../public/img/shop03.png ";
+import img1 from "../../public/img/shop01.png";
+import img2 from "../../public/img/shop02.png";
+import img3 from "../../public/img/shop03.png";
 const Sections = () => {
   return (
     <div className="section">
