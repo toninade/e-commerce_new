@@ -3,6 +3,11 @@ import "./cartcard.css";
 import { Button, Stack } from "react-bootstrap";
 import { useContextCart } from "./context/Maincontext";
 import "./cardfavo.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCartShopping,
+  faSquareMinus,
+} from "@fortawesome/free-solid-svg-icons";
 
 const CardFav = ({ id, img, title, des, price, quantity }) => {
   const { addToCartFromefavo, removeFromfavorite } = useContextCart();
@@ -17,10 +22,10 @@ const CardFav = ({ id, img, title, des, price, quantity }) => {
         </div>
         <div className="btns">
           <Button onClick={() => removeFromfavorite(id)}>
-            <i className="fa-regular fa-square-minus"></i>
+            <FontAwesomeIcon icon={faSquareMinus} />
           </Button>
           <Button onClick={() => addToCartFromefavo(id)}>
-            <i className="fa-solid fa-cart-shopping"></i>
+            <FontAwesomeIcon icon={faCartShopping} />
           </Button>
         </div>
       </div>
