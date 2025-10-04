@@ -1,4 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPhone,
+  faEnvelope,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+
 import "./footer.css";
 
 const Footer = () => {
@@ -16,14 +23,16 @@ const Footer = () => {
               <div className="contacts">
                 <ul>
                   <li>
-                    <i className="fa-solid fa-phone"></i> +210-95-72-99
+                    <FontAwesomeIcon icon={faPhone} />
+                    +210-95-72-99
                   </li>
                   <li>
-                    <i className="fa-solid fa-envelope"></i> email.@email.com
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    email.@email.com
                   </li>
                   <li>
-                    <i className="fa-solid fa-location-dot"></i> 1242 stant
-                    goerge road
+                    <FontAwesomeIcon icon={faLocationDot} /> 1242 stant goerge
+                    road
                   </li>
                 </ul>
               </div>

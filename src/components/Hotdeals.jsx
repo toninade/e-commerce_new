@@ -1,11 +1,12 @@
 import { Button } from "react-bootstrap";
 import "./Hotdeal.css";
 import { Link } from "react-router-dom";
+import imgHotdeal from "../../public/img/hotdeal.png";
 
 const Hotdeals = () => {
   return (
     <div className="hot_deals" id="hotDeals">
-      <img src="../../public/img/hotdeal.png" alt="hotDeal" />
+      <img src={imgHotdeal} alt="hotDeal" />
       <div className="content">
         <div className="counter">
           <span>
