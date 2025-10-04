@@ -1,0 +1,22 @@
+.btnUp {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: sticky;
+  bottom: 50px;
+  left: 90%;
+  background-color: var(--danger) !important;
+  box-shadow: 1px 1px 10px black;
+  color: black;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  border: none !important;
+  visibility: hidden;
+}
+.show_btnUp {
+  visibility: visible;
+}

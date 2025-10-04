@@ -1,0 +1,122 @@
+.header_navbar {
+  background-color: var(--dark) !important;
+}
+
+.header_navbar .container > button {
+  margin-left: auto !important;
+}
+.header_navbar a.nav-link {
+  min-width: fit-content;
+  color: var(--dark) !important;
+  font-weight: 500 !important;
+  padding: 10px !important;
+  font-size: var(--smallFont);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_navbar a.nav-link span {
+  position: relative;
+  color: white;
+}
+.header_navbar button {
+  background-color: white;
+  margin-right: 20px;
+}
+a.nav-link span::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: var(--danger);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+a.nav-link:hover {
+  color: var(--danger) !important;
+}
+a.nav-link:hover span::before {
+  width: 100%;
+}
+
+.MeNu {
+  text-align: right;
+  margin-top: 10px;
+}
+.header_navbar .nav_links {
+  justify-content: flex-end;
+}
+
+.active span {
+  color: var(--danger) !important;
+}
+.active span::before {
+  width: 100% !important;
+}
+.cart_favorit {
+  display: none;
+}
+
+.cart_favorit button {
+  color: black !important;
+  background-color: var(--black) !important;
+  border: none;
+  font-size: var(--smallFont);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart_favorit button svg {
+  font-size: 20px;
+}
+.cart_favorit button:first-child {
+  margin-right: 20px;
+}
+.cart_favorit button div {
+  background-color: var(--danger);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: var(--smallFont);
+  position: absolute;
+  top: 0;
+  right: 30%;
+  color: white;
+}
+.log {
+  display: none !important;
+}
+
+@media (max-width: 992px) {
+  .header_navbar a.nav-link {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .header_navbar .nav_links {
+    justify-content: flex-start !important;
+  }
+  .cart_favorit {
+    margin-left: 30px;
+  }
+  .cart_favorit button {
+    color: white !important;
+  }
+  .cart_favorit button svg {
+    color: white !important;
+  }
+}
+@media (max-width: 768px) {
+  .main_navBar {
+    width: 250px !important;
+  }
+}
+@media (max-width: 576px) {
+  .log {
+    display: flex !important;
+    align-items: center;
+  }
+}

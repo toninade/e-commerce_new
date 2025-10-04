@@ -1,0 +1,81 @@
+.main_aside {
+  background-color: white !important;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 15px;
+  margin-top: 15px !important;
+  position: sticky !important;
+  top: 10%;
+  left: 0px;
+  margin-top: 50px;
+  z-index: 10 !important;
+  background: transparent !important;
+}
+
+.main_aside h4 {
+  padding: 10px;
+}
+.main_aside > input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 3px solid var(--borderColor);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.main_aside input:focus {
+  outline: none;
+}
+.main_aside .checks {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+.main_aside .checks h5 {
+  margin-bottom: 20px;
+}
+.main_aside .checks label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.main_aside .checks label > input {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+}
+
+.main_aside .price {
+  padding: 10px;
+}
+.main_aside .price input {
+  border-radius: 10px;
+  border: 2px solid var(--borderColor);
+  padding: 3px;
+}
+
+.main_aside .price input:focus {
+  outline: none;
+}
+.Toggle_filters {
+  border: none !important;
+  background-color: var(--danger) !important;
+  outline: none;
+  color: white;
+  position: sticky !important;
+  top: 50%;
+  left: 0;
+  align-items: flex-start;
+  z-index: 10;
+}
+.main_aside_offcanvas {
+  width: fit-content !important;
+}
+
+@media (max-width: 768px) {
+  .main_aside {
+    top: 50%;
+  }
+}

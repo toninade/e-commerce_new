@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "img": "../../public/img/product01.png",
+    "title": "Laptop hp",
+    "des": "8 Ram ,256 ssd",
+    "price": 1000,
+    "stars": 4
+  },
+  {
+    "id": 2,
+    "img": "../../public/img/product02.png",
+    "title": "HeadPhone",
+    "des": "hight edtions 2025 ",
+    "price": 120,
+    "stars": 4.5
+  },
+  {
+    "id": 3,
+    "img": "../../public/img/product04.png",
+    "title": "Ipad",
+    "des": "8 Ram ,256 , ios 18",
+    "price": 1199,
+    "stars": 3.8
+  },
+  {
+    "id": 4,
+    "img": "../../public/img/product09.png",
+    "title": "Camera",
+    "des": "type cannon ,200 mpx ",
+    "price": 699,
+    "stars": 4.7
+  }
+]
