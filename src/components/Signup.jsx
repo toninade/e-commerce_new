@@ -6,7 +6,6 @@ import {
   faSquareXTwitter,
   faSquarePinterest,
   faSquareInstagram,
-  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import "./signup.css";
 
