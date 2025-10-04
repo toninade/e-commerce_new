@@ -2,10 +2,12 @@ import { Nav, Container, Navbar, Offcanvas, Button } from "react-bootstrap";
 import { useContextCart } from "./context/Maincontext";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-
-library.add(...all);
+import {
+  faCartShopping,
+  faHeart,
+  faRegistered,
+  faRightToBracket,
+} from "@fortawesome/free-solid-svg-icons";
 
 import "./Navbar.css";
 
@@ -88,17 +90,17 @@ const NavBar = () => {
                     <span>About</span>
                   </Nav.Link>
                   <Nav.Link className="log" to="/register" as={NavLink}>
-                    <FontAwesomeIcon icon="fa-solid fa-registered" />
+                    <FontAwesomeIcon icon={faRegistered} />
                     REGISTER
                   </Nav.Link>
                   <Nav.Link className="log" to="/login" as={NavLink}>
-                    <FontAwesomeIcon icon="fa-solid fa-right-to-bracket" />
+                    <FontAwesomeIcon icon={faRightToBracket} />
                     LOGIN
                   </Nav.Link>
                 </Nav>
                 <div className="cart_favorit d-flex">
                   <Button onClick={openfav}>
-                    <FontAwesomeIcon icon="fa-solid fa-heart" />
+                    <FontAwesomeIcon icon={faHeart} />
                     wishList
                     <div className="d-flex justify-content-center align-items-center ">
                       {favo.length}

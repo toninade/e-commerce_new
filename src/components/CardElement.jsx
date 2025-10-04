@@ -4,9 +4,11 @@ import Currency_fun from "./currency";
 import { useContextCart } from "./context/Maincontext";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-library.add(...all);
+import {
+  faCartShopping,
+  faEye,
+  faHeart,
+} from "@fortawesome/free-solid-svg-icons";
 
 const CardElement = ({ id, img, title, des, price, stars }) => {
   const { addToCart, addTofavorite, setEleid } = useContextCart();
@@ -24,7 +26,7 @@ const CardElement = ({ id, img, title, des, price, stars }) => {
             RATE: {stars} {<i className="fa-solid fa-star"></i>}
           </CardText>
           <Button onClick={() => addTofavorite(id)} className="icon">
-            <FontAwesomeIcon icon="fa-solid fa-heart" />
+            <FontAwesomeIcon icon={faHeart} />
           </Button>
           <Button
             as={Link}
