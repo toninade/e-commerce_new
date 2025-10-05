@@ -15,11 +15,12 @@ import ElementDetails from "./components/ElementDetails";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/e-commerce_new/">
+      <BrowserRouter basename="/e-commerce_new">
         <MainNavbar />
         <Routes>
           <Route path="/shop" element={<Shop />} />
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
           <Route path="/hotdeals" element={<Hotdeals />} />
           <Route path="/topselling" element={<Topselling />} />
           <Route path="/about" element={<Footer />} />
