@@ -26,10 +26,11 @@
 }
 @media (max-width: 576px) {
   .login input {
-    margin: 20px 0px;
+    margin: 5px 0px 10px 0px;
   }
   .login label {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) {
