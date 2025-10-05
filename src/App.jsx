@@ -15,7 +15,7 @@ import ElementDetails from "./components/ElementDetails";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/e-commerce_new/">
         <MainNavbar />
         <Routes>
           <Route path="/shop" element={<Shop />} />
