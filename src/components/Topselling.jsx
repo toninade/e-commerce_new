@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-
-import Topsellingdata from "./Data1.json";
+import { DataTwo } from "./AllData";
 import CardTwo from "./CardTwo";
 
 const Topselling = () => {
@@ -19,7 +18,7 @@ const Topselling = () => {
           <h3 style={{ margin: "20px 0px ", padding: "0px 10px" }}>
             TOP SELLING
           </h3>
-          {Topsellingdata.map((ele) => (
+          {DataTwo.map((ele) => (
             <Col
               className="d-flex  align-items-center"
               sm={6}

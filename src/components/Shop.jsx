@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import shopdata from "./Data2.json";
+import { DataThree } from "./AllData";
 import CardElement from "./CardElement";
 import Sidenav from "./Sidenav";
 import { useEffect, useState } from "react";
@@ -7,13 +7,13 @@ import "./shop.css";
 import Btn from "./Btn";
 
 const Shop = () => {
-  const [dataToshow, setDataToshow] = useState(shopdata);
+  const [dataToshow, setDataToshow] = useState(DataThree);
   const [inpData, setInptData] = useState("");
   const [price, setPrice] = useState({ min: 0, max: 0 });
 
   useEffect(() => {
     setDataToshow(
-      shopdata.filter((item) => {
+      DataThree.filter((item) => {
         const eleTitle = item.title.toLocaleLowerCase();
         return eleTitle.startsWith(inpData.toLocaleLowerCase());
       })
