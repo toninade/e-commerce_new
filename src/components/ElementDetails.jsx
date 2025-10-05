@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import Details from "./Details";
-import Data from "./Data2.json";
+import { DataThree } from "./AllData";
 import { useContextCart } from "./context/Maincontext";
 
 const ElementDetails = () => {
@@ -8,7 +8,7 @@ const ElementDetails = () => {
   return (
     <div className="Element">
       <Container>
-        {Data.map((el) => {
+        {DataThree.map((el) => {
           if (el.id == eleId) {
             return <Details {...el} />;
           }

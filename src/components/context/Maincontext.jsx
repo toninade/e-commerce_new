@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import DataCart from "../Data2.json";
+import { DataThree } from "../AllData";
 import Shoppingcart from "../Shoppingcart";
 import Favorite from "../Favorit";
 
@@ -29,7 +29,7 @@ const Maincontext = ({ children }) => {
 
   const addToCart = (id) => {
     if (cart.find((ele) => ele.id == id) == null) {
-      DataCart.map((el) => {
+      DataThree.map((el) => {
         el.id == id ? setCart([...cart, { ...el, quantity: 1 }]) : el;
       });
     } else {
@@ -66,7 +66,7 @@ const Maincontext = ({ children }) => {
 
   const addTofavorite = (id) => {
     if (favo.find((ele) => ele.id == id) == null) {
-      DataCart.map((el) => {
+      DataThree.map((el) => {
         return el.id == id ? setFavo([...favo, el]) : el;
       });
     }
