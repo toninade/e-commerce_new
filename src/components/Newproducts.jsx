@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
-import Data from "./Data.json";
+import { DataOne } from "./AllData";
 import CardElement from "./CardElement";
 
 const Newproducts = () => {
@@ -17,7 +17,7 @@ const Newproducts = () => {
           NEW PRODUCTS
         </h3>
         <Row>
-          {Data.map((ele) => (
+          {DataOne.map((ele) => (
             <Col
               style={{ position: "relative" }}
               sm={6}
