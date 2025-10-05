@@ -39,7 +39,7 @@ const NavBar = () => {
                     className={({ isActive }) =>
                       isActive ? "nav-link active" : "nav-link"
                     }
-                    to="/"
+                    to="/home"
                     as={NavLink}
                   >
                     <span>Home</span>
