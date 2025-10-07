@@ -2,6 +2,8 @@ import { Button, Container } from "react-bootstrap";
 import "./details.css";
 import { useContextCart } from "./context/Maincontext";
 import Currency_fun from "./currency";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Details = ({ id, img, title, price, stars, des }) => {
   const { addToCart, addTofavorite } = useContextCart();
@@ -40,14 +42,15 @@ const Details = ({ id, img, title, price, stars, des }) => {
           </p>
           <div className=" btns">
             <Button onClick={() => addToCart(id)}>
-              ADD TO CART <i className="fa-solid fa-cart-shopping"></i>{" "}
+              ADD TO CART <FontAwesomeIcon icon={faCartShopping} />
             </Button>
             <Button
               onClick={() => {
                 addTofavorite(id);
               }}
             >
-              ADD TO FAVORITE <i className="fa-solid fa-heart"></i>{" "}
+              ADD TO FAVORITE
+              <FontAwesomeIcon icon={faHeart} />
             </Button>
           </div>
         </div>
