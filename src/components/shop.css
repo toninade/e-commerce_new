@@ -23,5 +23,6 @@
 @media (max-width: 768px) {
   .shop {
     flex-direction: column;
+    margin-top: -60px;
   }
 }

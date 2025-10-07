@@ -10,6 +10,12 @@
 .register label {
   margin-bottom: 30px;
 }
+.register label > span {
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+  transition: all 0.5s;
+}
 .register label input {
   border: 1px solid black;
   border-radius: 5px;
@@ -26,7 +32,13 @@
 }
 @media (max-width: 576px) {
   .register input {
-    margin: 20px 0px;
+    margin: 5px 0px;
+    width: 90%;
+  }
+
+  .register input:focus label > span {
+    transform: translateY(0);
+    visibility: visible;
   }
   .register label {
     margin-bottom: 15px;

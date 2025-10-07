@@ -8,7 +8,7 @@ function Sidenav({ setInptData, setPrice }) {
   return (
     <>
       {["md"].map((expand) => (
-        <Navbar key={expand} expand={expand} className=" main_aside">
+        <Navbar key={expand} expand={expand} className=" main_aside p-0 m-0">
           <Container fluid>
             <Button
               className="Toggle_filters"

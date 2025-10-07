@@ -20,3 +20,9 @@
 .show_btnUp {
   visibility: visible;
 }
+
+@media (max-width: 576px) {
+  .btnUp {
+    left: 85%;
+  }
+}

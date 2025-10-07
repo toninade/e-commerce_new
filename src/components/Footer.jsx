@@ -13,7 +13,7 @@ const Footer = () => {
     <div id="about" className="footer">
       <Container className="d-flex  justify-content-between align-items-center">
         <Row>
-          <Col>
+          <Col xs={6} md={4} lg={3}>
             <div className="aboutus">
               <h4>ABOUT US</h4>
               <p>
@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col xs={6} md={4} lg={3}>
             <div className="categories">
               <h4>CATEGORIES</h4>
               <ul>
@@ -60,7 +60,7 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col>
+          <Col xs={6} md={4} lg={3}>
             <div className="information">
               <h4>INFORMATION</h4>
               <ul>
@@ -82,7 +82,7 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col>
+          <Col xs={6} md={4} lg={3}>
             <div className="information">
               <h4>SERVICE</h4>
               <ul>

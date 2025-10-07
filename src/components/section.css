@@ -7,6 +7,9 @@
   margin: 15px 0px;
   background-color: var(--lightWhite);
   height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sectionContent img {
   width: 300px;
