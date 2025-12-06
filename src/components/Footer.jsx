@@ -6,8 +6,6 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
-import "./footer.css";
-
 const Footer = () => {
   return (
     <div id="about" className="footer">

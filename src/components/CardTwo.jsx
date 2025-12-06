@@ -1,5 +1,5 @@
 import Currency_fun from "./currency";
-import "./cardtwo.css";
+// import "./cardtwo.css";
 
 const CardTwo = ({ img, title, des, price }) => {
   return (

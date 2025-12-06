@@ -1,5 +1,5 @@
 import { Button, Card, CardText, CardTitle } from "react-bootstrap";
-import "./cardElement.css";
+// import "./cardElement.css";
 import Currency_fun from "./currency";
 import { useContextCart } from "./context/Maincontext";
 import { Link } from "react-router-dom";

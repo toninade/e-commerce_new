@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
-import "./details.css";
+// import "./details.css";
 import { useContextCart } from "./context/Maincontext";
 import Currency_fun from "./currency";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "./MiddleHeader.css";
 import logoImg from "../../public/img/logo.png";
 import NavBar from "./NavBar";
 

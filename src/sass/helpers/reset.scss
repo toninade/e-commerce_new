@@ -1,3 +1,6 @@
+@use "./mixin" as *;
+@use "./variables" as *;
+
 /* reset elements */
 * {
   margin: 0;
@@ -12,14 +15,10 @@ ul {
 a {
   text-decoration: none;
 }
-/* root */
-:root {
-  --white: white;
-  --dark: #15161d;
-  --lightDark: #1e1f29;
-  --danger: #d10024;
-  --lightWhite: #d8d3d3f3;
-  --smallFont: 14px;
-  --xfont: 24px;
-  --borderColor: #e4e7ed;
+input:focus {
+  outline: none;
+}
+.about {
+  background-color: $dark;
+  height: 90vh;
 }

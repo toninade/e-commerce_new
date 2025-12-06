@@ -9,18 +9,12 @@ import {
   faRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
-import "./Navbar.css";
-
 const NavBar = () => {
   const { cart, opencart, cartCount, openfav, favo } = useContextCart();
   return (
     <>
       {["md"].map((expand) => (
-        <Navbar
-          key={expand}
-          expand={expand}
-          className="bg-body-tertiary header_navbar"
-        >
+        <Navbar key={expand} expand={expand} className=" header_navbar">
           <Container className="container-fluid">
             <Navbar.Toggle
               style={{ margin: "0px" }}

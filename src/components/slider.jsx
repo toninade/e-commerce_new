@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import "./slider.css";
+import "../sass/pages/main.scss";
 
 import slider1 from "../../public/img/slider1.jpg";
 import slider2 from "../../public/img/slider2.jpg";

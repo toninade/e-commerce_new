@@ -1,8 +1,6 @@
 import Currency_fun from "./currency";
-import "./cartcard.css";
 import { Button, Stack } from "react-bootstrap";
 import { useContextCart } from "./context/Maincontext";
-import "./cardfavo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,

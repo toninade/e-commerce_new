@@ -1,5 +1,4 @@
 import Hotdeals from "./Hotdeals";
-import "./hotdealsSections.css";
 
 const HotdealsSection = () => {
   return (

@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import "./sidenav.css";
+// import "./sidenav.css";
 
 function Sidenav({ setInptData, setPrice }) {
   return (

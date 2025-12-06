@@ -1,16 +1,18 @@
-import "./App.css";
+import "./sass/pages/main.scss";
+import "./sass/pages/media.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Shop from "./components/Shop";
+import Shop from "./pages/Shop";
 import MainNavbar from "./components/MainNavbar";
-import Topselling from "./components/Topselling";
-import Hotdeals from "./components/Hotdeals";
-import About from "./components/About";
-import Signup from "./components/Signup";
-import Register from "./components/Register";
+import Topselling from "./pages/Topselling";
+import Hotdeals from "./pages/Hotdeals";
+import About from "./pages/About";
+import Signup from "./pages/Signup";
+import Register from "./pages/Register";
 import Login from "./components/Login";
 import ElementDetails from "./components/ElementDetails";
+import "./sass/helpers/reset.scss";
 
 function App() {
   return (

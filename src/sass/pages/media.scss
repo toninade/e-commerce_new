@@ -1,0 +1,265 @@
+@use "../helpers/mixin" as *;
+@use "../helpers/variables" as *;
+
+//   ==> 575px
+@include breakpoint(sMobile) {
+  .Header {
+    display: none;
+  }
+  .log {
+    display: flex !important;
+    align-items: center;
+  }
+  .card p {
+    font-size: 10px;
+  }
+  .btnUp {
+    left: 85%;
+  }
+  a.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover span {
+      color: $danger;
+    }
+    span {
+      color: $dark;
+    }
+  }
+  .cart_favorit {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register {
+    input:focus label > span {
+      transform: translateY(0);
+      visibility: visible;
+    }
+    label {
+      margin-bottom: 15px;
+    }
+    input {
+      margin: 5px 0px;
+      width: 90%;
+    }
+  }
+
+  .login {
+    form {
+      @include flexbox(center, center, column);
+      width: 100%;
+      padding: 20px;
+    }
+    input {
+      margin: 5px 0px 10px 0px !important;
+      width: 100%;
+    }
+    label {
+      display: flex !important;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  .hot_deals {
+    .content {
+      transform: translateY(-125%);
+    }
+    img {
+      transform: translateX(-600px);
+    }
+    .counter {
+      flex-wrap: wrap;
+    }
+    .element-text {
+      .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .btns button:first-child {
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 25px;
+      }
+      h5 {
+        font-size: 18px;
+      }
+      p {
+        padding: 0px !important;
+      }
+    }
+  }
+
+  .signup {
+    h3 {
+      font-size: 14px;
+    }
+    form {
+      align-items: flex-start;
+      input {
+        width: 70%;
+        border-radius: 30px;
+        margin-bottom: 10px;
+      }
+      button {
+        border-radius: 30px !important;
+      }
+    }
+  }
+
+  .footer {
+    p {
+      font-size: 12px;
+    }
+    ul {
+      margin-top: 10px;
+    }
+    ul li {
+      margin-bottom: 7px;
+    }
+  }
+
+  .shop {
+    flex-direction: column;
+    margin-top: -60px;
+  }
+  .main_aside {
+    top: 50%;
+  }
+  .main_navBar {
+    width: 250px !important;
+  }
+}
+
+// 576px => 767px
+@include breakpoint(mobile) {
+  .Header ul {
+    justify-content: center;
+  }
+  .last_ul {
+    justify-content: center !important;
+  }
+  .middle-last {
+    display: none !important;
+  }
+  .main_navBar {
+    width: 250px !important;
+  }
+  .shop {
+    flex-direction: column;
+    margin-top: -60px;
+  }
+  .hot_deals {
+    img {
+      transform: translateX(-350px);
+    }
+    .content {
+      transform: translateY(-160%);
+    }
+    .counter {
+      margin: 0px;
+      margin-left: auto;
+    }
+  }
+
+  .Details .container {
+    flex-direction: column !important;
+  }
+  .main_aside {
+    top: 50%;
+  }
+  a.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover span {
+      color: $danger;
+    }
+    span {
+      color: $dark;
+    }
+  }
+  .cart_favorit {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// 768px ==> 991px
+@include breakpoint(small) {
+  .cont_img img {
+    width: 120px;
+  }
+  .header_navbar {
+    a.nav-link {
+      margin-right: 5px;
+    }
+  }
+  .cart_favorit {
+    margin-left: 30px;
+
+    button {
+      color: white !important;
+    }
+    button svg {
+      color: white !important;
+    }
+  }
+  .register,
+  .login {
+    height: 69vh;
+  }
+  .content {
+    margin: 0px;
+    margin-left: auto;
+  }
+}
+
+// 992px ==> 1199px
+@include breakpoint(medium) {
+  .header_navbar .nav_links {
+    justify-content: flex-start !important;
+  }
+  .cart_favorit {
+    margin-left: 30px;
+    button {
+      color: white !important;
+      svg {
+        color: white !important;
+      }
+    }
+  }
+
+  .register,
+  .login {
+    height: 69vh;
+  }
+}
+
+// 1200px
+@include breakpoint(large) {
+  .header_navbar .nav_links {
+    justify-content: flex-start !important;
+  }
+  .cart_favorit {
+    margin-left: 30px;
+    button {
+      color: white !important;
+      svg {
+        color: white !important;
+      }
+    }
+  }
+
+  .register,
+  .login {
+    height: 69vh;
+  }
+}

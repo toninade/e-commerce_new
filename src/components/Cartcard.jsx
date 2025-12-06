@@ -1,5 +1,4 @@
 import Currency_fun from "./currency";
-import "./cartcard.css";
 import { Button } from "react-bootstrap";
 import { useContextCart } from "./context/Maincontext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
