@@ -2,13 +2,8 @@ import { useState } from "react";
 import { Form, Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Register = () => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
+const Login = () => {
+  const [form, setForm] = useState({ email: "", password: "" });
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -16,13 +11,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (form.password !== form.confirmPassword) {
-      alert("Passwords do not match!");
-      return;
-    }
-
-    alert("Registration Submitted (Frontend Only)");
+    alert("Login Submitted (Frontend Only)");
   };
 
   return (
@@ -34,21 +23,9 @@ const Register = () => {
         className="p-4 shadow-sm"
         style={{ width: "100%", maxWidth: "400px" }}
       >
-        <h3 className="text-center mb-4">Create Account</h3>
+        <h3 className="text-center mb-4">Login</h3>
 
         <Form onSubmit={handleSubmit}>
-          {/* Name */}
-          <Form.Group className="mb-3">
-            <Form.Label>Full Name</Form.Label>
-            <Form.Control
-              type="text"
-              name="name"
-              placeholder="Enter your full name"
-              onChange={handleChange}
-              required
-            />
-          </Form.Group>
-
           {/* Email */}
           <Form.Group className="mb-3">
             <Form.Label>Email</Form.Label>
@@ -73,26 +50,14 @@ const Register = () => {
             />
           </Form.Group>
 
-          {/* Confirm Password */}
-          <Form.Group className="mb-3">
-            <Form.Label>Confirm Password</Form.Label>
-            <Form.Control
-              type="password"
-              name="confirmPassword"
-              placeholder="Confirm your password"
-              onChange={handleChange}
-              required
-            />
-          </Form.Group>
-
-          <Button type="submit" variant="success" className="w-100 mt-2">
-            Register
+          <Button type="submit" className="w-100 mt-2" variant="primary">
+            Login
           </Button>
 
           <p className="text-center mt-3">
-            Already have an account?
-            <Link to="/login" className="ms-1">
-              Login
+            Don't have an account?
+            <Link to="/register" className="ms-1">
+              Register
             </Link>
           </p>
         </Form>
@@ -101,4 +66,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;

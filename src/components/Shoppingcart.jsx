@@ -1,10 +1,11 @@
-import { Offcanvas, Stack } from "react-bootstrap";
+import { Button, Offcanvas, Stack } from "react-bootstrap";
 import Cartcard from "./Cartcard.jsx";
 import { useContextCart } from "./context/Maincontext";
 import Currency_fun from "./currency";
+import { Link } from "react-router-dom";
 
-const Shoppingcart = ({ Cartstatus, closecart }) => {
-  const { cart } = useContextCart();
+const Shoppingcart = () => {
+  const { cart, Cartstatus, closecart } = useContextCart();
   return (
     <Offcanvas
       style={{ width: "300px" }}
@@ -30,6 +31,9 @@ const Shoppingcart = ({ Cartstatus, closecart }) => {
             }, 0)
           )}
         </div>
+        <Link to="/opencart">
+          <Button className="w-100 mt-3 button_opencart">Open cart</Button>
+        </Link>
       </Offcanvas.Body>
     </Offcanvas>
   );

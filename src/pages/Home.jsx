@@ -2,7 +2,7 @@ import Sections from "../components/Sections";
 import Newproducts from "../components/Newproducts";
 import Hotdeals from "./Hotdeals";
 import Topselling from "./Topselling";
-import Signup from "./Signup";
+import Signup from "../components/Signup";
 import Footer from "../components/Footer";
 import Btn from "../components/Btn";
 import Slider from "../components/slider";
