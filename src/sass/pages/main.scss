@@ -370,6 +370,16 @@ a.nav-link span {
     }
   }
 }
+.btn-btn {
+  background-color: $danger !important;
+  border: none !important;
+  color: white !important;
+  &:hover {
+    background-color: transparent !important;
+    border: 1px $danger solid !important;
+    color: black !important;
+  }
+}
 // shop cart details
 
 .shop-cart-details {

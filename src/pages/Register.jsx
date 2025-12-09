@@ -34,7 +34,7 @@ const Register = () => {
         className="p-4 shadow-sm"
         style={{ width: "100%", maxWidth: "400px" }}
       >
-        <h3 className="text-center mb-4">Create Account</h3>
+        <h3 className="text-center mb-4">Register</h3>
 
         <Form onSubmit={handleSubmit}>
           {/* Name */}
@@ -85,13 +85,13 @@ const Register = () => {
             />
           </Form.Group>
 
-          <Button type="submit" variant="success" className="w-100 mt-2">
+          <Button type="submit" className="w-100 mt-2 btn-btn">
             Register
           </Button>
 
           <p className="text-center mt-3">
             Already have an account?
-            <Link to="/login" className="ms-1">
+            <Link to="/login" className="ms-1 ">
               Login
             </Link>
           </p>
