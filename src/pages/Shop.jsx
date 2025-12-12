@@ -3,7 +3,7 @@ import { DataThree } from "../components/AllData";
 import CardElement from "../components/CardElement";
 import Sidenav from "../components/Sidenav";
 import { useEffect, useState } from "react";
-import Btn from "../components/Btn";
+import Btn from "../components/button up/Btn";
 
 const Shop = () => {
   const [dataToshow, setDataToshow] = useState(DataThree);

@@ -1,5 +1,5 @@
 import { Nav, Container, Navbar, Offcanvas, Button } from "react-bootstrap";
-import { useContextCart } from "./context/Maincontext";
+import { useContextCart } from "../context/Maincontext";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Shop from "./pages/Shop";
-import MainNavbar from "./components/MainNavbar";
+import MainNavbar from "./components/header/MainNavbar";
 import Topselling from "./pages/Topselling";
 import Hotdeals from "./pages/Hotdeals";
 import About from "./pages/About";
