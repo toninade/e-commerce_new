@@ -14,7 +14,7 @@ const CardElement = ({ id, img, title, des, price, stars }) => {
   const { addToCart, addTofavorite, setEleid } = useContextCart();
   return (
     <>
-      <Card>
+      <Card style={{ minHeight: "350px" }}>
         <Card.Header>
           <Card.Img src={img} loading="lazy" fetchPriority="auto" />
         </Card.Header>

@@ -14,7 +14,7 @@ import NavBar from "./NavBar";
 const MainNavbar = () => {
   return (
     <>
-      <div className="Header">
+      <div className="Header" style={{ height: "34px" }}>
         <Container className="container-fluid">
           <Row className=" justify-content-between align-items-center d-flex">
             <Col className="Address" md={8} lg={8}>
@@ -48,7 +48,10 @@ const MainNavbar = () => {
           </Row>
         </Container>
       </div>
-      <div className="middle d-flex justify-content-between align-items-center ">
+      <div
+        className="middle d-flex justify-content-between align-items-center "
+        style={{ height: "69px" }}
+      >
         <Container fluid>
           <Row className="content">
             <Col className="cont_img " xs={6} sm={4} md={2} lg={2}>

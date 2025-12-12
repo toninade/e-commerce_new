@@ -18,7 +18,8 @@ const Sections = () => {
                 alt="img-section"
                 loading="lazy"
                 fetchPriority="auto"
-                width="300px"
+                width="300"
+                height="200"
               />
               <div className="text">
                 <h3>Laptop Collection</h3>
@@ -35,7 +36,9 @@ const Sections = () => {
                 alt="img-section"
                 loading="lazy"
                 fetchPriority="auto"
-                width="300px"
+                style={{ width: "300px", height: "auto" }}
+                width="300"
+                height="200"
               />
               <div className="text">
                 <h3>Accessories Collection</h3>
@@ -52,7 +55,8 @@ const Sections = () => {
                 alt="img-section"
                 loading="lazy"
                 fetchPriority="auto"
-                width="300px"
+                width="300"
+                height="200"
               />
               <div className="text">
                 <h3>Cameras Collection</h3>
