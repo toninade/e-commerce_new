@@ -1,12 +1,12 @@
-import imgLaptop1 from "../../public/img/product01.png";
-import imgLaptop2 from "../../public/img/product03.png";
-import imgLaptop3 from "../../public/img/product06.png";
-import imgLaptop4 from "../../public/img/product08.png";
-import imgPhone from "../../public/img/product07.png";
-import imgIpod from "../../public/img/product04.png";
-import imgHeadphone1 from "../../public/img/product02.png";
-import imgHeadphone2 from "../../public/img/product05.png";
-import imgCamera from "../../public/img/product09.png";
+import imgLaptop1 from "../../webp/product01.webp";
+import imgLaptop2 from "../../webp/product03.webp";
+import imgLaptop3 from "../../webp/product06.webp";
+import imgLaptop4 from "../../webp/product08.webp";
+import imgPhone from "../../webp/product07.webp";
+import imgIpod from "../../webp/product04.webp";
+import imgHeadphone1 from "../../webp/product02.webp";
+import imgHeadphone2 from "../../webp/product05.webp";
+import imgCamera from "../../webp/product09.webp";
 
 export const DataOne = [
   {

@@ -8,7 +8,7 @@ import MainNavbar from "./components/MainNavbar";
 import Topselling from "./pages/Topselling";
 import Hotdeals from "./pages/Hotdeals";
 import About from "./pages/About";
-import Signup from "./components/Signup";
+import Signup from "./pages/Signup";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import ElementDetails from "./components/ElementDetails";
