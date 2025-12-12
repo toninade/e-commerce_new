@@ -2,9 +2,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import imgSection1 from "../../public/img/shop01.png";
-import imgSection2 from "../../public/img/shop02.png";
-import imgSection3 from "../../public/img/shop03.png";
+import imgSection1 from "../../webp/shop01.webp";
+import imgSection2 from "../../webp/shop02.webp";
+import imgSection3 from "../../webp/shop03.webp";
 
 const Sections = () => {
   return (
@@ -13,7 +13,7 @@ const Sections = () => {
         <Row>
           <Col md={6} sm={12} lg={4}>
             <div className="sectionContent">
-              <img src={imgSection1} />
+              <img src={imgSection1} alt="img-section" loading="lazy" />
               <div className="text">
                 <h3>Laptop Collection</h3>
                 <Link to="/shop">
@@ -24,7 +24,7 @@ const Sections = () => {
           </Col>
           <Col md={6} sm={12} lg={4}>
             <div className="sectionContent">
-              <img src={imgSection2} />
+              <img src={imgSection2} alt="img-section" loading="lazy" />
               <div className="text">
                 <h3>Accessories Collection</h3>
                 <Link to="/shop">
@@ -35,7 +35,7 @@ const Sections = () => {
           </Col>
           <Col md={6} sm={12} lg={4}>
             <div className="sectionContent">
-              <img src={imgSection3} alt="img" loading="lazy" />
+              <img src={imgSection3} alt="img-section" loading="lazy" />
               <div className="text">
                 <h3>Cameras Collection</h3>
                 <Link to="/shop">

@@ -1,11 +1,11 @@
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import imgHotdeal from "../../public/img/hotdeal.png";
+import imgHotdeal from "../../webp/hotdeal.webp";
 
 const Hotdeals = () => {
   return (
     <div className="hot_deals" id="hotDeals">
-      <img src={imgHotdeal} alt="hotDeal" />
+      <img src={imgHotdeal} alt="hotDeal" loading="lazy" />
       <div className="content">
         <div className="counter">
           <span>
