@@ -14,7 +14,7 @@ const Details = ({ id, img, title, price, stars, des }) => {
           <Col sm={12} lg={4}>
             <div className="all_imgs">
               <div className="img_cont">
-                <img src={img} alt={title} />
+                <img src={img} alt={title} loading="lazy" />
               </div>
               <div className="imgs_cont">
                 <img src={img} alt={title} />

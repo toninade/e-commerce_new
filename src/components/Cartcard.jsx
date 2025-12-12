@@ -8,7 +8,7 @@ const Cartcard = ({ id, img, title, price, quantity }) => {
   const { removeFromCart } = useContextCart();
   return (
     <div className="cartcard d-flex align-items-center justify-content-between ">
-      <img src={img} alt={title} />
+      <img src={img} alt={title} loading="lazy" />
       <div className="text-cont">
         <h6>{title}</h6>
         {quantity > 1 && <p> quantity: {quantity}</p>}

@@ -16,7 +16,7 @@ const ShopCartDetails = ({ id, img, title, price, quantity, des }) => {
           to="/elementdetails"
           className="icon"
         >
-          <img src={img} alt="img" />
+          <img src={img} alt="img" loading="lazy" />
         </Link>
         <p>X {quantity}</p>
       </div>

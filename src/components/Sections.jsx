@@ -35,7 +35,7 @@ const Sections = () => {
           </Col>
           <Col md={6} sm={12} lg={4}>
             <div className="sectionContent">
-              <img src={imgSection3} />
+              <img src={imgSection3} alt="img" loading="lazy" />
               <div className="text">
                 <h3>Cameras Collection</h3>
                 <Link to="/shop">

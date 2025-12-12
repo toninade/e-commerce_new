@@ -12,7 +12,7 @@ const CardFav = ({ id, img, title, des, price, quantity }) => {
   return (
     <Stack>
       <div className="cartfav d-flex align-items-center justify-content-between ">
-        <img src={img} alt={title} />
+        <img src={img} alt={title} loading="lazy" />
         <div className="text-cont">
           <h6>{title}</h6>
           <p>{des}</p>
