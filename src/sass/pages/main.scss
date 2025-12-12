@@ -176,7 +176,6 @@ a.nav-link span {
   height: 250px;
   @include flexbox(center, center, row);
   img {
-    width: 300px;
     position: relative;
     transition: all 0.5s;
   }
