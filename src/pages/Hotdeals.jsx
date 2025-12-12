@@ -5,7 +5,7 @@ import imgHotdeal from "../../webp/hotdeal.webp";
 const Hotdeals = () => {
   return (
     <div className="hot_deals" id="hotDeals">
-      <img src={imgHotdeal} alt="hotDeal" loading="lazy" />
+      <img src={imgHotdeal} alt="hotDeal" loading="lazy" fetchPriority="auto" />
       <div className="content">
         <div className="counter">
           <span>

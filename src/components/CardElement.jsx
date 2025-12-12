@@ -16,7 +16,7 @@ const CardElement = ({ id, img, title, des, price, stars }) => {
     <>
       <Card>
         <Card.Header>
-          <Card.Img src={img} loading="lazy" />
+          <Card.Img src={img} loading="lazy" fetchPriority="auto" />
         </Card.Header>
         <Card.Body>
           <CardTitle>{title}</CardTitle>

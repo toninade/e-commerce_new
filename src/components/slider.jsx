@@ -14,6 +14,7 @@ const Slider = () => {
           src={slider1}
           alt="First slide"
           loading="lazy"
+          fetchPriority="high"
         />
         <Carousel.Caption>
           <h5>New Collection of Apple</h5>
@@ -25,6 +26,7 @@ const Slider = () => {
           src={slider2}
           alt="Second slide"
           loading="lazy"
+          fetchPriority="high"
         />
         <Carousel.Caption>
           <h5>New samsung Phone </h5>
@@ -36,6 +38,7 @@ const Slider = () => {
           src={slider3}
           alt="Third slide"
           loading="lazy"
+          fetchPriority="high"
         />
         <Carousel.Caption>
           <h5>Get Not 20 with 3% OFF </h5>

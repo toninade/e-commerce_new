@@ -4,7 +4,7 @@ import Currency_fun from "./currency";
 const CardTwo = ({ img, title, des, price }) => {
   return (
     <div className="cardtwo d-flex align-items-center ">
-      <img src={img} alt={title} loading="lazy" />
+      <img src={img} alt={title} loading="lazy" fetchPriority="auto" />
       <div className="text-cont">
         <h6>{title}</h6>
         <p>{des}</p>

@@ -13,7 +13,12 @@ const Sections = () => {
         <Row>
           <Col md={6} sm={12} lg={4}>
             <div className="sectionContent">
-              <img src={imgSection1} alt="img-section" loading="lazy" />
+              <img
+                src={imgSection1}
+                alt="img-section"
+                loading="lazy"
+                fetchPriority="auto"
+              />
               <div className="text">
                 <h3>Laptop Collection</h3>
                 <Link to="/shop">
@@ -24,7 +29,12 @@ const Sections = () => {
           </Col>
           <Col md={6} sm={12} lg={4}>
             <div className="sectionContent">
-              <img src={imgSection2} alt="img-section" loading="lazy" />
+              <img
+                src={imgSection2}
+                alt="img-section"
+                loading="lazy"
+                fetchPriority="auto"
+              />
               <div className="text">
                 <h3>Accessories Collection</h3>
                 <Link to="/shop">
@@ -35,7 +45,12 @@ const Sections = () => {
           </Col>
           <Col md={6} sm={12} lg={4}>
             <div className="sectionContent">
-              <img src={imgSection3} alt="img-section" loading="lazy" />
+              <img
+                src={imgSection3}
+                alt="img-section"
+                loading="lazy"
+                fetchPriority="auto"
+              />
               <div className="text">
                 <h3>Cameras Collection</h3>
                 <Link to="/shop">
