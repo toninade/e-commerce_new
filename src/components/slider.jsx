@@ -3,9 +3,8 @@ import "../sass/pages/main.scss";
 import slider1 from "../../webp/slider1.webp";
 import slider2 from "../../webp/slider2.webp";
 import slider3 from "../../webp/slider6.webp";
-import { memo } from "react";
 
-const Slider = memo(() => {
+const Slider = () => {
   return (
     <Carousel data-bs-theme="dark" style={{ width: "100%", height: "auto" }}>
       <Carousel.Item>
@@ -55,6 +54,6 @@ const Slider = memo(() => {
       </Carousel.Item>
     </Carousel>
   );
-});
+};
 
 export default Slider;

@@ -5,9 +5,8 @@ import {
   faEnvelope,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import { memo } from "react";
 
-const Footer = memo(() => {
+const Footer = () => {
   return (
     <div id="about" className="footer">
       <Container className="d-flex  justify-content-between align-items-center">
@@ -107,6 +106,6 @@ const Footer = memo(() => {
       </Container>
     </div>
   );
-});
+};
 
 export default Footer;
