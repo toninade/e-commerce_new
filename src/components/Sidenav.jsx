@@ -1,11 +1,10 @@
-import { memo } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 // import "./sidenav.css";
 
-export default memo(function Sidenav({ setInptData, setPrice }) {
+function Sidenav({ setInptData, setPrice }) {
   return (
     <>
       {["md"].map((expand) => (
@@ -136,4 +135,6 @@ export default memo(function Sidenav({ setInptData, setPrice }) {
       ))}
     </>
   );
-});
+}
+
+export default Sidenav;
