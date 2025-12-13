@@ -16,7 +16,12 @@ const CardElement = memo(({ id, img, title, des, price, stars }) => {
     <>
       <Card style={{ minHeight: "350px" }}>
         <Card.Header>
-          <Card.Img src={img} loading="lazy" fetchPriority="auto" />
+          <Card.Img
+            src={img}
+            alt="img shop card"
+            loading="lazy"
+            fetchPriority="auto"
+          />
         </Card.Header>
         <Card.Body>
           <CardTitle>{title}</CardTitle>
@@ -25,10 +30,15 @@ const CardElement = memo(({ id, img, title, des, price, stars }) => {
           <CardText>
             RATE: {stars} {<i className="fa-solid fa-star"></i>}
           </CardText>
-          <Button onClick={() => addTofavorite(id)} className="icon">
+          <Button
+            aria-label="add to favo"
+            onClick={() => addTofavorite(id)}
+            className="icon"
+          >
             <FontAwesomeIcon icon={faHeart} />
           </Button>
           <Button
+            aria-label="open element"
             as={Link}
             onClick={() => setEleid(id)}
             to="/elementdetails"
@@ -36,7 +46,11 @@ const CardElement = memo(({ id, img, title, des, price, stars }) => {
           >
             <FontAwesomeIcon icon={faEye} />
           </Button>
-          <Button onClick={() => addToCart(id)} className="btn_card ">
+          <Button
+            aria-label="add to cart"
+            onClick={() => addToCart(id)}
+            className="btn_card "
+          >
             <FontAwesomeIcon icon={faCartShopping} />
           </Button>
         </Card.Body>
