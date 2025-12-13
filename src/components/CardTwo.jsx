@@ -1,7 +1,8 @@
 import Currency_fun from "./currency";
 // import "./cardtwo.css";
+import { memo } from "react";
 
-const CardTwo = ({ img, title, des, price }) => {
+const CardTwo = memo(({ img, title, des, price }) => {
   return (
     <div className="cardtwo d-flex align-items-center ">
       <img src={img} alt={title} loading="lazy" fetchPriority="auto" />
@@ -12,6 +13,6 @@ const CardTwo = ({ img, title, des, price }) => {
       </div>
     </div>
   );
-};
+});
 
 export default CardTwo;

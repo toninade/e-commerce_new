@@ -3,8 +3,9 @@ import { Button } from "react-bootstrap";
 import { useContextCart } from "./context/Maincontext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareMinus } from "@fortawesome/free-solid-svg-icons";
+import { memo } from "react";
 
-const Cartcard = ({ id, img, title, price, quantity }) => {
+const Cartcard = memo(({ id, img, title, price, quantity }) => {
   const { removeFromCart } = useContextCart();
   return (
     <div className="cartcard d-flex align-items-center justify-content-between ">
@@ -19,6 +20,6 @@ const Cartcard = ({ id, img, title, price, quantity }) => {
       </Button>
     </div>
   );
-};
+});
 
 export default Cartcard;

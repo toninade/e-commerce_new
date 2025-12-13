@@ -5,8 +5,9 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import imgSection1 from "../../webp/shop01.webp";
 import imgSection2 from "../../webp/shop02.webp";
 import imgSection3 from "../../webp/shop03.webp";
+import { memo } from "react";
 
-const Sections = () => {
+const Sections = memo(() => {
   return (
     <div className="section">
       <Container>
@@ -70,6 +71,6 @@ const Sections = () => {
       </Container>
     </div>
   );
-};
+});
 
 export default Sections;

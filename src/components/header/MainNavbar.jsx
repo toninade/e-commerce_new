@@ -10,8 +10,9 @@ import {
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import logoImg from "../../../webp/logo.webp";
 import NavBar from "./NavBar";
+import { memo } from "react";
 
-const MainNavbar = () => {
+const MainNavbar = memo(() => {
   return (
     <>
       <div className="Header" style={{ height: "34px" }}>
@@ -65,6 +66,6 @@ const MainNavbar = () => {
       </div>
     </>
   );
-};
+});
 
 export default MainNavbar;

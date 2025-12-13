@@ -1,5 +1,4 @@
 import { Button, Card, CardText, CardTitle } from "react-bootstrap";
-// import "./cardElement.css";
 import Currency_fun from "./currency";
 import { useContextCart } from "./context/Maincontext";
 import { Link } from "react-router-dom";
@@ -9,8 +8,9 @@ import {
   faEye,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
+import { memo } from "react";
 
-const CardElement = ({ id, img, title, des, price, stars }) => {
+const CardElement = memo(({ id, img, title, des, price, stars }) => {
   const { addToCart, addTofavorite, setEleid } = useContextCart();
   return (
     <>
@@ -43,6 +43,6 @@ const CardElement = ({ id, img, title, des, price, stars }) => {
       </Card>
     </>
   );
-};
+});
 
 export default CardElement;

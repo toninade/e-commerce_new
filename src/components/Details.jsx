@@ -4,8 +4,9 @@ import { useContextCart } from "./context/Maincontext";
 import Currency_fun from "./currency";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { memo } from "react";
 
-const Details = ({ id, img, title, price, stars, des }) => {
+const Details = memo(({ id, img, title, price, stars, des }) => {
   const { addToCart, addTofavorite } = useContextCart();
   return (
     <div className="Details">
@@ -62,6 +63,6 @@ const Details = ({ id, img, title, price, stars, des }) => {
       </Container>
     </div>
   );
-};
+});
 
 export default Details;

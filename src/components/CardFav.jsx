@@ -2,12 +2,13 @@ import Currency_fun from "./currency";
 import { Button, Stack } from "react-bootstrap";
 import { useContextCart } from "./context/Maincontext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { memo } from "react";
 import {
   faCartShopping,
   faSquareMinus,
 } from "@fortawesome/free-solid-svg-icons";
 
-const CardFav = ({ id, img, title, des, price, quantity }) => {
+const CardFav = memo(({ id, img, title, des, price, quantity }) => {
   const { addToCartFromefavo, removeFromfavorite } = useContextCart();
   return (
     <Stack>
@@ -29,6 +30,6 @@ const CardFav = ({ id, img, title, des, price, quantity }) => {
       </div>
     </Stack>
   );
-};
+});
 
 export default CardFav;

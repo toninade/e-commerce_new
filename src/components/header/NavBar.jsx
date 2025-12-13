@@ -2,6 +2,7 @@ import { Nav, Container, Navbar, Offcanvas, Button } from "react-bootstrap";
 import { useContextCart } from "../context/Maincontext";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { memo } from "react";
 import {
   faCartShopping,
   faHeart,
@@ -9,7 +10,7 @@ import {
   faRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
-const NavBar = () => {
+const NavBar = memo(() => {
   const { cart, opencart, cartCount, openfav, favo } = useContextCart();
   return (
     <>
@@ -115,6 +116,6 @@ const NavBar = () => {
       ))}
     </>
   );
-};
+});
 
 export default NavBar;
