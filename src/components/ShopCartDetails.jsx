@@ -4,8 +4,9 @@ import { faSquareMinus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContextCart } from "./context/Maincontext";
 import { Button } from "react-bootstrap";
+import { memo } from "react";
 
-const ShopCartDetails = ({ id, img, title, price, quantity, des }) => {
+const ShopCartDetails = memo(({ id, img, title, price, quantity, des }) => {
   const { cart, removeFromCart, setEleid } = useContextCart();
 
   return (
@@ -30,6 +31,6 @@ const ShopCartDetails = ({ id, img, title, price, quantity, des }) => {
       </Button>
     </div>
   );
-};
+});
 
 export default ShopCartDetails;
