@@ -5,6 +5,7 @@ import {
   faEnvelope,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import { memo } from "react";
 
 const Footer = memo(() => {
   return (
