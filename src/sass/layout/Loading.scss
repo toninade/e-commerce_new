@@ -1,0 +1,15 @@
+@use "../helpers/mixin" as *;
+@use "../helpers/variables" as *;
+
+.Loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2.2;
+  font-size: 20px;
+  background: transparent;
+}

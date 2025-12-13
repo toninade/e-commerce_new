@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Maincontext from "./components/context/Maincontext";
 import MainNavbar from "./components/header/MainNavbar";
+import Loading from "./components/Loading";
 
 const Home = lazy(() => import("./pages/Home"));
 const Shop = lazy(() => import("./pages/Shop"));
@@ -27,7 +28,7 @@ function App() {
       <BrowserRouter basename="/e-commerce_new">
         <Maincontext>
           <MainNavbar />
-          <Suspense fallback={<div>Loading ...</div>}>
+          <Suspense fallback={<Loading />}>
             <Routes>
               <Route path="/shop" element={<Shop />} />
               <Route path="/" element={<Home />} />
