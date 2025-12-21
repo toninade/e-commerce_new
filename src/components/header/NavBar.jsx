@@ -52,7 +52,7 @@ const NavBar = memo(() => {
                     className={({ isActive }) =>
                       isActive ? "nav-link active" : "nav-link"
                     }
-                    to="/Hotdeals"
+                    to="/HotdealsSection"
                     as={NavLink}
                   >
                     <span>Hot deals</span>

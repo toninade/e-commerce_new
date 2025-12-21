@@ -5,106 +5,120 @@ import {
   faEnvelope,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+
+const item_variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Footer = () => {
   return (
-    <div id="about" className="footer">
-      <Container className="d-flex  justify-content-between align-items-center">
-        <Row>
-          <Col xs={6} md={4} lg={3}>
-            <div className="aboutus">
-              <h4>ABOUT US</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut.
-              </p>
-              <div className="contacts">
+    <motion.div
+      variants={item_variants}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.4 }}
+    >
+      <div id="about" className="footer">
+        <Container className="d-flex  justify-content-between align-items-center">
+          <Row>
+            <Col xs={6} md={4} lg={3}>
+              <div className="aboutus">
+                <h4>ABOUT US</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut.
+                </p>
+                <div className="contacts">
+                  <ul>
+                    <li>
+                      <FontAwesomeIcon icon={faPhone} />
+                      +210-95-72-99
+                    </li>
+                    <li>
+                      <FontAwesomeIcon icon={faEnvelope} />
+                      email.@email.com
+                    </li>
+                    <li>
+                      <FontAwesomeIcon icon={faLocationDot} /> 1242 stant goerge
+                      road
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Col>
+            <Col xs={6} md={4} lg={3}>
+              <div className="categories">
+                <h4>CATEGORIES</h4>
                 <ul>
                   <li>
-                    <FontAwesomeIcon icon={faPhone} />
-                    +210-95-72-99
+                    <a>Hot Deals</a>
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    email.@email.com
+                    <a>Laptops</a>
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faLocationDot} /> 1242 stant goerge
-                    road
+                    <a>Smartphones</a>
+                  </li>
+                  <li>
+                    <a>Cameras</a>
+                  </li>
+                  <li>
+                    <a>Accessores</a>
                   </li>
                 </ul>
               </div>
-            </div>
-          </Col>
-          <Col xs={6} md={4} lg={3}>
-            <div className="categories">
-              <h4>CATEGORIES</h4>
-              <ul>
-                <li>
-                  <a>Hot Deals</a>
-                </li>
-                <li>
-                  <a>Laptops</a>
-                </li>
-                <li>
-                  <a>Smartphones</a>
-                </li>
-                <li>
-                  <a>Cameras</a>
-                </li>
-                <li>
-                  <a>Accessores</a>
-                </li>
-              </ul>
-            </div>
-          </Col>
-          <Col xs={6} md={4} lg={3}>
-            <div className="information">
-              <h4>INFORMATION</h4>
-              <ul>
-                <li>
-                  <a>About us</a>
-                </li>
-                <li>
-                  <a>Contacts</a>
-                </li>
-                <li>
-                  <a>Privty Policy</a>
-                </li>
-                <li>
-                  <a>Orders and returns</a>
-                </li>
-                <li>
-                  <a>Terms & Conditions</a>
-                </li>
-              </ul>
-            </div>
-          </Col>
-          <Col xs={6} md={4} lg={3}>
-            <div className="information">
-              <h4>SERVICE</h4>
-              <ul>
-                <li>
-                  <a>About us</a>
-                </li>
-                <li>
-                  <a>Contacts</a>
-                </li>
-                <li>
-                  <a>Privty Policy</a>
-                </li>
-                <li>
-                  <a>Orders and returns</a>
-                </li>
-                <li>
-                  <a>Terms & Conditions</a>
-                </li>
-              </ul>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+            </Col>
+            <Col xs={6} md={4} lg={3}>
+              <div className="information">
+                <h4>INFORMATION</h4>
+                <ul>
+                  <li>
+                    <a>About us</a>
+                  </li>
+                  <li>
+                    <a>Contacts</a>
+                  </li>
+                  <li>
+                    <a>Privty Policy</a>
+                  </li>
+                  <li>
+                    <a>Orders and returns</a>
+                  </li>
+                  <li>
+                    <a>Terms & Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+            <Col xs={6} md={4} lg={3}>
+              <div className="information">
+                <h4>SERVICE</h4>
+                <ul>
+                  <li>
+                    <a>About us</a>
+                  </li>
+                  <li>
+                    <a>Contacts</a>
+                  </li>
+                  <li>
+                    <a>Privty Policy</a>
+                  </li>
+                  <li>
+                    <a>Orders and returns</a>
+                  </li>
+                  <li>
+                    <a>Terms & Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </motion.div>
   );
 };
 

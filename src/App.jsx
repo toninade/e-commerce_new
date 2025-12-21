@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./sass/helpers/reset.scss";
 
 import { lazy, Suspense } from "react";
+import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Maincontext from "./components/context/Maincontext";
@@ -13,7 +14,7 @@ import Loading from "./components/Loading";
 const Home = lazy(() => import("./pages/Home"));
 const Shop = lazy(() => import("./pages/Shop"));
 const Topselling = lazy(() => import("./pages/Topselling"));
-const Hotdeals = lazy(() => import("./pages/Hotdeals"));
+const HotdealsSection = lazy(() => import("./pages/HotdealsSection"));
 const About = lazy(() => import("./pages/About"));
 const Signup = lazy(() => import("./pages/Signup"));
 const Register = lazy(() => import("./pages/Register"));
@@ -25,6 +26,7 @@ const ElementDetails = lazy(() => import("./components/ElementDetails"));
 function App() {
   return (
     <>
+      <Toaster position="top-center" />
       <BrowserRouter basename="/e-commerce_new">
         <Maincontext>
           <MainNavbar />
@@ -33,7 +35,7 @@ function App() {
               <Route path="/shop" element={<Shop />} />
               <Route path="/" element={<Home />} />
               <Route path="*" element={<Home />} />
-              <Route path="/hotdeals" element={<Hotdeals />} />
+              <Route path="/HotdealsSection" element={<HotdealsSection />} />
               <Route path="/topselling" element={<Topselling />} />
               <Route path="/about" element={<About />} />
               <Route path="/sub" element={<Signup />} />

@@ -3,7 +3,7 @@ import Currency_fun from "./currency";
 import { faSquareMinus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContextCart } from "./context/Maincontext";
-import { Button } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 
 const ShopCartDetails = ({ id, img, title, price, quantity, des }) => {
   const { cart, removeFromCart, setEleid } = useContextCart();
@@ -25,7 +25,11 @@ const ShopCartDetails = ({ id, img, title, price, quantity, des }) => {
         <p className="descrp">{des}</p>
         <p className="Price">{Currency_fun(quantity * price)}</p>
       </div>
-      <Button onClick={() => removeFromCart(id)} className="ms-auto remove-btn">
+      <Button
+        aria-label="remove element"
+        onClick={() => removeFromCart(id)}
+        className="ms-auto remove-btn"
+      >
         <FontAwesomeIcon icon={faSquareMinus} />
       </Button>
     </div>

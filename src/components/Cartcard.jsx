@@ -15,7 +15,11 @@ const Cartcard = memo(({ id, img, title, price, quantity }) => {
         {quantity > 1 && <p> quantity: {quantity}</p>}
         <p>{Currency_fun(price * quantity)}</p>
       </div>
-      <Button onClick={() => removeFromCart(id)} className="ms-auto">
+      <Button
+        aria-label="remove from cart"
+        onClick={() => removeFromCart(id)}
+        className="ms-auto"
+      >
         <FontAwesomeIcon icon={faSquareMinus} />
       </Button>
     </div>

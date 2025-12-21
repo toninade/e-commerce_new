@@ -32,7 +32,9 @@ const Shoppingcart = () => {
           )}
         </div>
         <Link to="/opencart">
-          <Button className="w-100 mt-3 button_opencart">Open cart</Button>
+          <Button aria-label="open cart" className="w-100 mt-3 button_opencart">
+            View Cart
+          </Button>
         </Link>
       </Offcanvas.Body>
     </Offcanvas>

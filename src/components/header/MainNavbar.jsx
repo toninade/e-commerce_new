@@ -15,7 +15,7 @@ import { memo } from "react";
 const MainNavbar = memo(() => {
   return (
     <>
-      <div className="Header" style={{ height: "34px" }}>
+      <div className="Header">
         <Container className="container-fluid">
           <Row className=" justify-content-between align-items-center d-flex">
             <Col className="Address" md={8} lg={8}>

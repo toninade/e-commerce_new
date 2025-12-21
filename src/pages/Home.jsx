@@ -1,23 +1,38 @@
-import Sections from "../components/Sections";
-import Newproducts from "../components/Newproducts";
-import Hotdeals from "./Hotdeals";
-import Topselling from "./Topselling";
-import Signup from "../pages/Signup";
-import Footer from "../components/footer/Footer";
-import Btn from "../components/button up/Btn";
+import { lazy } from "react";
+import { motion } from "framer-motion";
 import Slider from "../components/slider";
+
+const Sections = lazy(() => import("../components/Sections"));
+const Newproducts = lazy(() => import("../components/Newproducts"));
+const Hotdeals = lazy(() => import("../components/Hotdeals"));
+const Topselling = lazy(() => import("./Topselling"));
+const Signup = lazy(() => import("../pages/Signup"));
+const Footer = lazy(() => import("../components/footer/Footer"));
+const Btn = lazy(() => import("../components/button up/Btn"));
+
+const pageVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Home = () => {
   return (
     <>
       <Slider />
-      <Sections />
-      <Newproducts />
-      <Hotdeals />
-      <Topselling />
-      <Signup />
-      <Footer />
-      <Btn />
+      <motion.div
+        variants={pageVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <Sections />
+        <Newproducts />
+        <Hotdeals shopBtn={true} />
+        <Topselling />
+        <Signup />
+        <Footer />
+        <Btn />
+      </motion.div>
     </>
   );
 };

@@ -5,7 +5,15 @@ import { memo } from "react";
 const CardTwo = memo(({ img, title, des, price }) => {
   return (
     <div className="cardtwo d-flex align-items-center ">
-      <img src={img} alt={title} loading="lazy" fetchPriority="auto" />
+      <img
+        src={img}
+        alt={title}
+        loading="lazy"
+        fetchPriority="auto"
+        width="70"
+        height="auto"
+        style={{ width: "70px", height: "auto" }}
+      />
       <div className="text-cont">
         <h6>{title}</h6>
         <p>{des}</p>
