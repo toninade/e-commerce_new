@@ -38,10 +38,9 @@ const Hotdeals = ({ shopBtn }) => {
 
   return (
     <motion.div
-      initial="hidden"
-      whileInView="visible"
       variants={item_variant}
-      viewport={{ once: true, amount: 0.5 }}
+      initial="hidden"
+      animate="visible"
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <div className="hot_deals" id="hotDeals">
