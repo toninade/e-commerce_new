@@ -13,7 +13,7 @@ const Topselling = () => {
     <motion.div
       variants={pageVariants}
       initial="hidden"
-      whileInView="visible"
+      animate="visible"
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.4 }}
     >
