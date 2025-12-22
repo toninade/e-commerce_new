@@ -2,12 +2,6 @@ import { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import imgHotdeal from "../../webp/hotdeal.webp";
-import { motion } from "framer-motion";
-
-const item_variant = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-};
 
 const Hotdeals = ({ shopBtn }) => {
   const initialTime =
@@ -37,15 +31,7 @@ const Hotdeals = ({ shopBtn }) => {
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
   return (
-    <div
-      className="hot_deals"
-      id="hotDeals"
-      as={motion.div}
-      variants={item_variant}
-      initial="hidden"
-      animate="visible"
-      transition={{ duration: 0.4, ease: "easeOut" }}
-    >
+    <div className="hot_deals" id="hotDeals">
       <img src={imgHotdeal} alt="hotDeal" loading="lazy" fetchPriority="auto" />
       <div className="content">
         <div className="counter">
