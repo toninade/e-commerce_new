@@ -50,9 +50,6 @@ const Hotdeals = ({ shopBtn }) => {
           alt="hotDeal"
           loading="lazy"
           fetchPriority="auto"
-          width="1200"
-          height="auto"
-          style={{ width: "auto", height: "auto" }}
         />
         <div className="content">
           <div className="counter">
