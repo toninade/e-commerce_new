@@ -37,53 +37,49 @@ const Hotdeals = ({ shopBtn }) => {
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
   return (
-    <motion.div
+    <div
+      className="hot_deals"
+      id="hotDeals"
+      as={motion.div}
       variants={item_variant}
       initial="hidden"
       animate="visible"
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
     >
-      <div className="hot_deals" id="hotDeals">
-        <img
-          src={imgHotdeal}
-          alt="hotDeal"
-          loading="lazy"
-          fetchPriority="auto"
-        />
-        <div className="content">
-          <div className="counter">
-            <span>
-              {String(days).padStart(2, "0")}
-              <span>DAYS</span>
-            </span>
-            <span>
-              {String(hours).padStart(2, "0")}
-              <span>HOURS</span>
-            </span>
-            <span>
-              {String(minutes).padStart(2, "0")}
-              <span>MINS</span>
-            </span>
-            <span>
-              {String(seconds).padStart(2, "0")}
-              <span>SECS</span>
-            </span>
-          </div>
-          <div className="txt">
-            <h3>Hot Deal This Week</h3>
-            <p>New Collection Up to 30% OFF</p>
+      <img src={imgHotdeal} alt="hotDeal" loading="lazy" fetchPriority="auto" />
+      <div className="content">
+        <div className="counter">
+          <span>
+            {String(days).padStart(2, "0")}
+            <span>DAYS</span>
+          </span>
+          <span>
+            {String(hours).padStart(2, "0")}
+            <span>HOURS</span>
+          </span>
+          <span>
+            {String(minutes).padStart(2, "0")}
+            <span>MINS</span>
+          </span>
+          <span>
+            {String(seconds).padStart(2, "0")}
+            <span>SECS</span>
+          </span>
+        </div>
+        <div className="txt">
+          <h3>Hot Deal This Week</h3>
+          <p>New Collection Up to 30% OFF</p>
 
-            {shopBtn && (
-              <Button className="hot-deals-btn">
-                <Link aria-label="hotdeals page" to="/HotdealsSection">
-                  Shop Now
-                </Link>
-              </Button>
-            )}
-          </div>
+          {shopBtn && (
+            <Button className="hot-deals-btn" aria-label="hot deal button">
+              <Link aria-label="hotdeals page" to="/HotdealsSection">
+                Shop Now
+              </Link>
+            </Button>
+          )}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

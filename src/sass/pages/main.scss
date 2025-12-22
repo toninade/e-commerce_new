@@ -35,9 +35,9 @@ ul li {
 
 .middle {
   background-color: $dark;
-  @include postion(sticky, top 0);
-  z-index: 30;
-  overflow: hidden;
+  @include postion(sticky, top 0, left 0);
+  z-index: 999;
+  height: 70px;
   .content {
     @include flexbox(space-between, center, row);
     padding: 0px !important;

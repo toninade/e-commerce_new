@@ -49,10 +49,7 @@ const MainNavbar = memo(() => {
           </Row>
         </Container>
       </div>
-      <div
-        className="middle d-flex justify-content-between align-items-center "
-        style={{ height: "69px" }}
-      >
+      <div className="middle">
         <Container fluid>
           <Row className="content">
             <Col className="cont_img " xs={6} sm={4} md={2} lg={2}>

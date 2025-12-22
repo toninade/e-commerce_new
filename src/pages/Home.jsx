@@ -19,6 +19,7 @@ const Home = () => {
   return (
     <>
       <motion.div
+        style={{ overflow: "hidden" }}
         variants={pageVariants}
         initial="hidden"
         animate="visible"
