@@ -18,13 +18,13 @@ const pageVariants = {
 const Home = () => {
   return (
     <>
-      <Slider />
       <motion.div
         variants={pageVariants}
         initial="hidden"
         animate="visible"
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
+        <Slider />
         <Sections />
         <Newproducts />
         <Hotdeals shopBtn={true} />
