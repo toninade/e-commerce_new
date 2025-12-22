@@ -1,1 +1,0 @@
-import{j as i}from"./index-DsRwTBGW.js";import t from"./Footer-CbIEfn2C.js";import{m as a}from"./proxy-Mh9azSlu.js";const o={hidden:{opacity:0,y:30},visible:{opacity:1,y:0}},n=()=>i.jsx(a.div,{variants:o,initial:"hidden",animate:"visible",transition:{duration:.6,ease:"easeOut"},children:i.jsx("div",{className:"about",children:i.jsx(t,{})})});export{n as default};
