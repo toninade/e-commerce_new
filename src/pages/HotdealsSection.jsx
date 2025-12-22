@@ -4,7 +4,7 @@ import CardElement from "../components/CardElement";
 import { Row, Col, Container } from "react-bootstrap";
 import { memo, useState } from "react";
 import PageBtns from "../components/PageBtns";
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 
 const pageVariants = {
   hidden: { opacity: 0, y: 30 },

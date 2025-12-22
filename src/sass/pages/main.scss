@@ -37,7 +37,7 @@ ul li {
   background-color: $dark;
   @include postion(sticky, top 0, left 0);
   z-index: 999;
-  height: 70px;
+  min-height: 70px;
   .content {
     @include flexbox(space-between, center, row);
     padding: 0px !important;
